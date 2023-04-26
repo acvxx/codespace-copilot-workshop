@@ -1,0 +1,38 @@
+name: Development
+
+# add a push event that triggers this workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: #array. 순서대로 실행됨
+    #add a new step to checkout the code
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # add a new step to install .net SDK 7
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 7.x
+
+    # add a new step to restore nuget packages
+    - name: Test the solution
+    run: dotnet test
+
+    # add a new step to build the entire solution with Release configuration
+    
+
+    # add a new step to test the solution with Release configuration
+
+    # add a new step to publish the solution with Release configuration
+
+    # add a new step to publish src/WebApi with Release configuration
+
+
+
+### name / on / jobs로 구성

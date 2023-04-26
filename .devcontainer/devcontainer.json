@@ -25,7 +25,12 @@
       "ghcr.io/devcontainers/features/github-cli:latest": {
         "version": "latest"
       },
-  
+      
+      "ghcr.io/devcontainers/features/java:latest": {
+        "version": "latest"
+      },
+      
+      
       // node.js
       "ghcr.io/devcontainers/features/node:latest": {
         "version": "lts",
